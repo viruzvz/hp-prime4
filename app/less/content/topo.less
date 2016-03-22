@@ -5,16 +5,19 @@ body {
   
 }
 .topo {
-  height: 95px;
+  height: 96px;
   position: relative;
   border-bottom: 1px solid #91968f;
   background: linear-gradient(to right, rgba(215,222,204,1) 0%,rgba(215,222,204,1) 50%,rgba(187,195,172,1) 50%,rgba(187,195,172,1) 100%); 
 }
 .logo-central {
   position: absolute;
-  left: 45%; 
+  left: 45.1%; 
   display: inline;
-  
+}
+.utils {
+  padding: 10px 0;
+  text-align: right;
 }
 .logo-type {
   padding: 0 15px;
@@ -34,6 +37,12 @@ body {
       line-height: 4;
       color: #404831;
       font-weight: bold;
+      background-color: transparent;
+      transition: all 0.3s ease;
+      &:hover{
+        background-color:#4b675b;
+        color:#fff;
+      }
     }
   }
 }

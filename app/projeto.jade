@@ -3,7 +3,7 @@ block content
   .topo
     nav.navbar.navbar-fixed-top
       .logo-central.visible-md.visible-lg
-        img.img-responsive(src="img/logo-central.svg" alt="Logo prime 4")
+        include jade/logo-central
       .container
         .navbar-header
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -11,18 +11,13 @@ block content
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand.logo-type(href='#')
+          a.navbar-brand.logo-type(href='#' title="Home")
             img(src="img/logo-type.svg" alt="Logo prime 4")
         #navbar.collapse.navbar-collapse
-          ul.nav.navbar-nav.nav-prime
-            li.active
-              a(href='#') Home
-            li
-              a(href='#about') Academia
-            li
-              a(href='#contact') PRIME 4 FIT
-            li
-              a(href='#about') Equipe e Filosofia
-            li
-              a(href='#contact') Contatos
-        // /.nav-collapse
+          include jade/links-menu
+  .container
+    .row
+      .col-md-12
+        p.utils 
+          span.glyphicon.glyphicon-time 
+          | seg a sex 06:00 às 22:00 / sáb 08:00 às 15:00
