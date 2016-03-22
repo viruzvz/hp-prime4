@@ -4,11 +4,51 @@ Author: Carlos vz */
 body {
   
 }
+.socialnetwork{
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  > li {
+    display: inline;
+      height: 32px;
+      width: 32px;
+    a {
+      margin-left: 10px;
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
+.facebook, .twitter {
+  fill:@color-prime4--textdefault;
+  transition: all 0.3s ease;
+  &:hover {
+    fill:#c7f1c0;
+  }
+}
 .topo {
   height: 96px;
   position: relative;
   border-bottom: 1px solid #91968f;
   background: linear-gradient(to right, rgba(215,222,204,1) 0%,rgba(215,222,204,1) 50%,rgba(187,195,172,1) 50%,rgba(187,195,172,1) 100%); 
+}
+@keyframes logocentral {
+  0%   {fill:#c7f1c0;}
+  25%  {fill:#b2f1a7;}
+  50%  {fill:#92e085;}
+  100% {fill:#b8d1b4;}
+}
+.logo-central--svg {
+  fill:#b8d1b4;
+  transition: all 0.3s ease;
+  &:hover {
+    fill:#c7f1c0;
+  }
+  animation-name: logocentral;
+  animation-duration: 5s;
 }
 .logo-central {
   position: absolute;
@@ -18,6 +58,7 @@ body {
 .utils {
   padding: 10px 0;
   text-align: right;
+  color:@color-prime4--textdefault;
 }
 .logo-type {
   padding: 0 15px;
@@ -29,19 +70,18 @@ body {
   > li {
     height: 95px;
     text-transform: uppercase;
-
     > a {
       padding-left: 10px;
       padding-right: 10px;
       height: 95px;
       line-height: 4;
-      color: #404831;
+      color: @color-prime4--text;
       font-weight: bold;
       background-color: transparent;
       transition: all 0.3s ease;
       &:hover{
         background-color:#4b675b;
-        color:#fff;
+        color:@color-prime4--texthover;
       }
     }
   }

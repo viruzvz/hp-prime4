@@ -1,0 +1,29 @@
+.topo
+  nav.navbar.navbar-fixed-top
+    .logo-central.visible-md.visible-lg
+      include logo-central
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.logo-type(href='#' title="Home")
+          img(src="../img/logo-type.svg" alt="Logo prime 4")
+      #navbar.collapse.navbar-collapse
+        include links-menu
+.container
+  .row
+    .col-md-11
+      p.utils 
+        span.glyphicon.glyphicon-time 
+        | seg a sex 06:00 às 22:00 / sáb 08:00 às 15:00
+    .col-md-1
+      ul.socialnetwork
+        li
+          a.facebook(href="#" title="Facebook")
+            include facebook
+        li
+          a.twitter(href="#" title="Twitter")
+            include twitter
