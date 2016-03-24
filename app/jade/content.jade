@@ -2,10 +2,18 @@
   .row
     .col-md-4
       .btns-prime4
-        button.btn.btn-default.btn-lg.btn-block(type='button') Block level button
-        button.btn.btn-default.btn-lg.btn-block(type='button') Block level button
-        button.btn.btn-default.btn-lg.btn-block(type='button') Block level button
-        button.btn.btn-default.btn-lg.btn-block(type='button') Block level button
+        a.btn.btn-prime4.btn-lg.btn-block(href="#")
+          img(src="../img/icon-timer.svg" alt="icon") 
+          |  &nbsp; HORÁRIOS DA ACADEMIA
+        a.btn.btn-prime4.btn-lg.btn-block(href="#")
+          img(src="../img/icon-camera.svg" alt="icon") 
+          |  &nbsp; FOTOS DA ACADEMIA
+        a.btn.btn-prime4.btn-lg.btn-block(href="#")
+          img(src="../img/icon-localizacao.svg" alt="icon") 
+          |  &nbsp; LOCALIZAÇÃO
+        a.btn.btn-prime4.btn-lg.btn-block(href="#")
+          img(src="../img/icon-engrenagem.svg" alt="icon") 
+          |  &nbsp; SERVIÇOS ESPECIAIS
 
     .col-md-8
       #carousel-example-generic.carousel.slide(data-ride='carousel')
@@ -17,14 +25,17 @@
         // Wrapper for slides
         .carousel-inner(role='listbox')
           .item.active
-            img(src='...', alt='...')
+            img(src='../img/fotos/1.jpg', alt='...')
             .carousel-caption
               | ...
           .item
-            img(src='...', alt='...')
+            img(src='../img/fotos/2.jpg', alt='...')
             .carousel-caption
               | ...
-          |     ...
+          .item
+            img(src='../img/fotos/1.jpg', alt='...')
+            .carousel-caption
+              | ...
         // Controls
         a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
           span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
@@ -32,3 +43,35 @@
         a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
           span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
           span.sr-only Next
+          
+.container.content          
+  .row.servicos
+    .col-md-12
+      h2 SERVIÇOS ESPECIAIS
+    .col-md-3
+      | a
+    .col-md-3
+      | b
+    .col-md-3
+      | c
+    .col-md-3
+      | d
+
+  .row.atividades
+    .col-md-12
+      h2 ATIVIDADES
+    .col-md-3
+      | a
+    .col-md-3
+      | b
+    .col-md-3
+      | c
+    .col-md-3
+      | d
+
+  .row.testemunhal
+    .col-md-12
+      h2 ACREDITAMOS QUE!
+    .col-md-12
+      p.text-center
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.

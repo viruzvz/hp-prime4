@@ -1,5 +1,16 @@
 /* Theme Name: Prime 4
 Author: Carlos vz */
+h1 {
+
+}
+h2 {
+  border-bottom: 1px solid @color-prime4--default;
+  font-size: 18px;
+  color: @color-prime4--textdefault;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
 .socialnetwork{
   list-style: none;
   padding-left: 0;
@@ -39,6 +50,9 @@ Author: Carlos vz */
     margin-bottom: 0; 
     border:none;
   }
+  .navbar-collapse {
+    padding-right: 0;
+  }
 }
 @keyframes logocentral {
   0%   {fill:#c7f1c0;}
@@ -75,7 +89,6 @@ Author: Carlos vz */
 }
 .nav-prime {
   float: right;
-  
   > li {
     text-transform: uppercase;
     font-size: @font-size--sm;
@@ -84,7 +97,7 @@ Author: Carlos vz */
       padding-right: 10px;
       margin-top: -1px;
       height: 96px;
-      line-height: 5;
+      line-height: 4.8;
       color: @color-prime4--text;
       font-weight: bold;
       background-color: transparent;
@@ -109,6 +122,9 @@ Author: Carlos vz */
 @media (max-width: @screen-sm-max) {
   .topo {
     background: @color-prime4--primary;
+    .navbar-collapse {
+      padding-right: inherit;
+    }
   }
   .nav-prime {
     float: none;
