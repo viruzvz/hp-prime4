@@ -36,8 +36,13 @@ h2 {
   float: right;
   fill:@color-prime4--textdefault;
   transition: all 0.3s ease;
+  path {
+    fill:@color-prime4--textdefault;
+  }
   &:hover {
-    fill:#c7f1c0;
+      path {
+        fill:#2EA5D9;
+      }
   }
 }
 .topo {
@@ -79,9 +84,10 @@ h2 {
 }
 .utils {
   padding: 10px 0;
-  text-align: right;
+  text-align: left;
   color:@color-prime4--textdefault;
   margin: 0;
+  font-weight: bold;
 }
 .logo-type {
   padding: 0 15px;
