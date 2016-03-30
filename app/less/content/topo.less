@@ -11,6 +11,13 @@ h2 {
   margin-bottom: 15px;
   padding-bottom: 5px;
 }
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color:@color-prime4--text;
+}
 .socialnetwork{
   list-style: none;
   padding-left: 0;
@@ -50,6 +57,13 @@ h2 {
   position: relative;
   border-bottom: 1px solid #91968f;
   background: linear-gradient(to right, #d8decd 0%,#d8decd 45%,#bbc3ac 45%,#bbc3ac 100%);
+  .navbar-toggle {
+    background-color: @color-prime4--text;
+    margin-top: 30px;
+    span {
+      background-color: #fff;
+    }
+  }
   .navbar {
     min-height: auto;
     margin-bottom: 0; 
@@ -64,6 +78,11 @@ h2 {
   25%  {fill:#b2f1a7;}
   50%  {fill:#92e085;}
   100% {fill:#b8d1b4;}
+}
+.logo-estrela {
+  position: absolute;
+  left: 30%;
+  display: inline;
 }
 .logo-central--svg {
   fill:#b8d1b4;
@@ -133,6 +152,15 @@ h2 {
     }
   }
   .nav-prime {
+    float: right;
+    > li {
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: @screen-xs-max) {
+
+  .nav-prime {
     float: none;
     > li {
       font-size: 12px;
@@ -145,4 +173,6 @@ h2 {
       }
     }
   }
+
+
 }

@@ -2,6 +2,8 @@
   nav.navbar
     .logo-central.visible-md.visible-lg
       include logo-central
+    .logo-estrela.visible-md.visible-lg
+      img(src='img/logo-estrelas.svg' alt="Estrelas da Logo")
     .container
 
       .navbar-header
@@ -13,7 +15,8 @@
         a.navbar-brand.logo-type(href='#' title="Home")
           img(src="../img/logo-type.svg" alt="Logo prime 4")
       #navbar.collapse.navbar-collapse
-        include links-menu
+        ul.nav.navbar-nav.nav-prime
+          include links-menu
 .container
   .row
     .col-md-10.col-sm-6.col-xs-8
