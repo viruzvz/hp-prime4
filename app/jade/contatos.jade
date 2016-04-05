@@ -6,13 +6,13 @@
       form(action='http://form.ultramail.com.br/', method='POST')
         .form-group
           label(for='email') Endereço de E-mail
-          input#email.form-control(type='email', name="email" placeholder='nome@provedor.com.br')
+          input#email.form-control(type='email', name="email" placeholder='nome@provedor.com.br' required)
         .form-group
           label(for='nome') Nome
-          input#nome.form-control(type='text', name="nome" placeholder='Nome')
+          input#nome.form-control(type='text', name="nome" placeholder='Nome' required)
         .form-group
           label(for='assunto') Mensagem
-          textarea#assunto.form-control(rows="3", name="assunto")
+          textarea#assunto.form-control(rows="3", name="assunto", required)
         button.btn.btn-default(type='submit', value='Eviar') Enviar
 
         input(type='hidden', name='key', value='')
