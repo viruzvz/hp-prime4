@@ -1,6 +1,6 @@
 # Descrição
 
-* Site Instituto Personnalite - Dentista
+* Site Prime 4 academia
 
 # Ferramentas utilizadas no sistema
 
