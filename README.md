@@ -5,9 +5,7 @@
 # Ferramentas utilizadas no sistema
 
 1.  Bootstrap v3.3.5 (FrameWork)
-2.  Senado Css v2.6.3 (FrameWork)
 3.  Jquery v2.1.4
-4.  Font Awesome v4.7 (Icone fontes)
 
 # Instalação do Front-End
 
