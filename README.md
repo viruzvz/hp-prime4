@@ -9,6 +9,7 @@
 
 # Instalação do Front-End
 
+* É necessário o `node js` https://nodejs.org/en/
 * `npm install`
 * `grunt dev`
 * execute o servidor apartir do endereço `localhost:8000/` nesse caso abrir por `localhost:8000/projeto.html`
