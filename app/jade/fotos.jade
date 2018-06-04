@@ -1,0 +1,36 @@
+.container.fotos
+	.row
+		.col-md-12
+			h1 Fotos da academia
+		mixin thumbs(img)
+			.col-md-3.col-sm-6.col-xs-6.thumb
+				.box
+					a.thumbnail(href='#', data-image-id='', data-toggle='modal', data-image=img , data-target='#image-gallery', data-title='Fotos da academia', data-caption='Prime4 Lago Norte')
+						img.img-responsive.thumbnail(src=img)
+		+thumbs('img/fotos/3.jpg')
+		+thumbs('img/fotos/4.jpg')
+		+thumbs('img/fotos/5.jpg')
+		+thumbs('img/fotos/6.jpg')
+		+thumbs('img/fotos/7.jpg')
+		+thumbs('img/fotos/8.jpg')
+		+thumbs('img/fotos/9.jpg')
+		+thumbs('img/fotos/10.jpg')
+		+thumbs('img/fotos/11.jpg')
+		+thumbs('img/fotos/12.jpg')
+		+thumbs('img/fotos/13.jpg')
+		+thumbs('img/fotos/14.jpg')
+		+thumbs('img/fotos/16.jpg')
+		+thumbs('img/fotos/17.jpg')
+		+thumbs('img/fotos/18.jpg')
+		+thumbs('img/fotos/19.jpg')
+		+thumbs('img/fotos/20.jpg')
+		+thumbs('img/fotos/21.jpg')
+		+thumbs('img/fotos/22.jpg')
+		+thumbs('img/fotos/23.jpg')
+		+thumbs('img/fotos/24.jpg')
+		+thumbs('img/fotos/25.jpg')
+		+thumbs('img/fotos/26.jpg')
+		+thumbs('img/fotos/27.jpg')
+		+thumbs('img/fotos/28.jpg')
+		+thumbs('img/fotos/29.jpg')
+include galeria-modal

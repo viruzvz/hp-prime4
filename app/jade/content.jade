@@ -5,10 +5,10 @@
         a.btn.btn-prime4.btn-lg.btn-block(href="horarios.html")
           img(src="../img/icon-timer.svg" alt="icon") 
           |  &nbsp; HORÁRIOS DA ACADEMIA
-        a.btn.btn-prime4.btn-lg.btn-block(href="#")
+        a.btn.btn-prime4.btn-lg.btn-block(href="fotos.html")
           img(src="../img/icon-camera.svg" alt="icon") 
           |  &nbsp; FOTOS DA ACADEMIA
-        a.btn.btn-prime4.btn-lg.btn-block(href="#")
+        a.btn.btn-prime4.btn-lg.btn-block(href="contatos.html")
           img(src="../img/icon-localizacao.svg" alt="icon") 
           |  &nbsp; LOCALIZAÇÃO
         a.btn.btn-prime4.btn-lg.btn-block(href="servicos.html")
@@ -16,31 +16,32 @@
           |  &nbsp; SERVIÇOS ESPECIAIS
 
     .col-md-8
-      #carousel-example-generic.carousel.slide(data-ride='carousel')
+      #prime4.carousel.slide(data-ride='carousel')
         // Indicators
         ol.carousel-indicators
-          li.active(data-target='#carousel-example-generic', data-slide-to='0')
-          li(data-target='#carousel-example-generic', data-slide-to='1')
-          li(data-target='#carousel-example-generic', data-slide-to='2')
+          li.active(data-target='#prime4', data-slide-to='0')
+          li(data-target='#prime4', data-slide-to='1')
+          li(data-target='#prime4', data-slide-to='2')
+          li(data-target='#prime4', data-slide-to='3')
+          li(data-target='#prime4', data-slide-to='4')
+          li(data-target='#prime4', data-slide-to='5')
         // Wrapper for slides
         .carousel-inner(role='listbox')
-          .item.active
-            img(src='../img/fotos/1.jpg', alt='...')
-            .carousel-caption
-              | Espaço PRIME 4 Lago Norte
-          .item
-            img(src='../img/fotos/2.jpg', alt='...')
-            .carousel-caption
-              | Espaço PRIME 4 Lago Norte
-          .item
-            img(src='../img/fotos/1.jpg', alt='...')
-            .carousel-caption
-              | Espaço PRIME 4 Lago Norte
+          mixin item(active, img)
+            .item(class=active)
+              img(src=img)
+              .carousel-caption
+                | Espaço PRIME 4 Lago Norte
+          +item('active','../img/carousel/1.jpg')
+          +item('','../img/carousel/2.jpg')
+          +item('','../img/carousel/3.jpg')
+          +item('','../img/carousel/4.jpg')
+          +item('','../img/carousel/5.jpg')
         // Controls
-        a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+        a.left.carousel-control(href='#prime4', role='button', data-slide='prev')
           span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
           span.sr-only Previous
-        a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+        a.right.carousel-control(href='#prime4', role='button', data-slide='next')
           span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
           span.sr-only Next
           
