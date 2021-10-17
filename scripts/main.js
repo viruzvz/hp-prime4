@@ -1,8 +1,18 @@
 ;!function () {
-	$('.facebook, .twitter').tooltip();
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
 $(document).ready(function(){
 
-    loadGallery(true, 'a.thumbnail');
+    loadGallery(true, 'a.fotos-item');
 
     //This function disables buttons when needed
     function disableButtons(counter_max, counter_current){
